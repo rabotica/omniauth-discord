@@ -13,7 +13,7 @@ module OmniAuth
         :token_url     => 'oauth2/token'
       }
 
-      option :authorize_options, [:scope, :permissions]
+      option :authorize_options, [:scope, :permissions, :guild_id]
 
       uid { raw_info['id'] }
 
